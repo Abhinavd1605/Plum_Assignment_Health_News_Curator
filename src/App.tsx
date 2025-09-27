@@ -3,6 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { NewsProvider, useNews } from "@/context/NewsContext";
+import { ThemeProvider } from "@/context/ThemeContext";
 import NewsLoader from "@/screens/NewsLoader";
 import ProcessingHub from "@/screens/ProcessingHub";
 import CuratedFeed from "@/screens/CuratedFeed";
@@ -29,13 +30,15 @@ const AppRouter = () => {
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <NewsProvider>
-        <AppRouter />
-      </NewsProvider>
-    </TooltipProvider>
+    <ThemeProvider>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <NewsProvider>
+          <AppRouter />
+        </NewsProvider>
+      </TooltipProvider>
+    </ThemeProvider>
   </QueryClientProvider>
 );
 

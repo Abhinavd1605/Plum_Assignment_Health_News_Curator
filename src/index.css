@@ -9,11 +9,11 @@
   :root {
     /* Premium Medical Color Palette */
     --background: 218 100% 98%;
-    --foreground: 215 25% 27%;
+    --foreground: 0 0% 10%;
 
     /* Glass Morphism Base */
-    --glass-background: 220 60% 98%;
-    --glass-border: 220 40% 85%;
+    --glass-background: 220 60% 97%;
+    --glass-border: 220 40% 80%;
     --glass-shadow: 220 25% 35%;
 
     /* Medical Primary - Soft Blue */
@@ -23,17 +23,17 @@
     --primary-dark: 212 95% 42%;
 
     /* Medical Secondary - Clean White */
-    --secondary: 220 40% 98%;
-    --secondary-foreground: 215 25% 27%;
+    --secondary: 220 40% 96%;
+    --secondary-foreground: 0 0% 10%;
 
     /* Card System */
-    --card: 220 60% 98%;
-    --card-foreground: 215 25% 27%;
-    --card-hover: 220 65% 96%;
+    --card: 220 60% 97%;
+    --card-foreground: 0 0% 10%;
+    --card-hover: 220 65% 94%;
 
     /* Interactive Elements */
     --accent: 212 85% 88%;
-    --accent-foreground: 215 25% 27%;
+    --accent-foreground: 0 0% 10%;
 
     /* Status Colors */
     --success: 142 76% 36%;
@@ -44,12 +44,12 @@
     --destructive-foreground: 0 0% 100%;
 
     /* Muted Elements */
-    --muted: 220 40% 94%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 220 40% 90%;
+    --muted-foreground: 0 0% 35%;
 
     /* Form Elements */
-    --input: 220 40% 95%;
-    --border: 220 40% 88%;
+    --input: 220 40% 93%;
+    --border: 220 40% 85%;
     --ring: 212 90% 55%;
 
     /* Glass Effect Variables */
@@ -59,8 +59,8 @@
 
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(212 90% 55%) 0%, hsl(212 85% 65%) 100%);
-    --gradient-glass: linear-gradient(135deg, hsla(220, 60%, 98%, 0.9) 0%, hsla(220, 55%, 96%, 0.7) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(212 90% 55%) 0%, hsl(195 85% 65%) 50%, hsl(220 60% 98%) 100%);
+    --gradient-glass: linear-gradient(135deg, hsla(255, 255%, 255%, 0.98) 0%, hsla(220, 60%, 98%, 0.95) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(212 90% 55%) 0%, hsl(195 85% 65%) 50%, hsl(220 60% 97%) 100%);
 
     /* Shadows */
     --shadow-glass: 0 8px 32px hsla(220, 25%, 35%, 0.12);
@@ -92,41 +92,41 @@
   .dark {
     /* Dark Mode - Sophisticated Medical Dark Theme */
     --background: 215 28% 8%;
-    --foreground: 220 40% 95%;
+    --foreground: 0 0% 95%;
 
-    --glass-background: 215 25% 12%;
-    --glass-border: 220 30% 20%;
+    --glass-background: 215 25% 15%;
+    --glass-border: 220 30% 25%;
     --glass-shadow: 215 25% 5%;
 
     --primary: 212 85% 65%;
-    --primary-foreground: 215 28% 8%;
+    --primary-foreground: 0 0% 10%;
     --primary-light: 212 70% 25%;
     --primary-dark: 212 90% 75%;
 
-    --secondary: 215 25% 15%;
-    --secondary-foreground: 220 40% 95%;
+    --secondary: 215 25% 18%;
+    --secondary-foreground: 0 0% 95%;
 
-    --card: 215 25% 12%;
-    --card-foreground: 220 40% 95%;
-    --card-hover: 215 25% 16%;
+    --card: 215 25% 15%;
+    --card-foreground: 0 0% 95%;
+    --card-hover: 215 25% 18%;
 
     --accent: 212 70% 25%;
-    --accent-foreground: 220 40% 95%;
+    --accent-foreground: 0 0% 95%;
 
     --success: 142 70% 45%;
     --warning: 38 85% 60%;
     --destructive: 0 75% 65%;
 
-    --muted: 215 25% 18%;
-    --muted-foreground: 220 20% 65%;
+    --muted: 215 25% 22%;
+    --muted-foreground: 0 0% 70%;
 
-    --input: 215 25% 16%;
-    --border: 220 30% 20%;
+    --input: 215 25% 18%;
+    --border: 220 30% 25%;
     --ring: 212 85% 65%;
 
     --gradient-primary: linear-gradient(135deg, hsl(212 85% 65%) 0%, hsl(212 80% 75%) 100%);
-    --gradient-glass: linear-gradient(135deg, hsla(215, 25%, 12%, 0.9) 0%, hsla(215, 20%, 10%, 0.7) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(212 85% 65%) 0%, hsl(195 80% 75%) 50%, hsl(215 25% 12%) 100%);
+    --gradient-glass: linear-gradient(135deg, hsla(215, 25%, 15%, 0.95) 0%, hsla(215, 20%, 13%, 0.9) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(212 85% 65%) 0%, hsl(195 80% 75%) 50%, hsl(215 25% 15%) 100%);
 
     --shadow-glass: 0 8px 32px hsla(215, 25%, 5%, 0.5);
     --shadow-card: 0 4px 16px hsla(215, 25%, 5%, 0.3);
@@ -178,6 +178,7 @@
     background: var(--gradient-glass);
     border-color: hsl(var(--glass-border) / var(--glass-border-opacity));
     box-shadow: var(--shadow-glass);
+    color: inherit !important;
   }
 
   .glass-button {

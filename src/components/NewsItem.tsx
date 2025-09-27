@@ -46,10 +46,10 @@ export const NewsItem: React.FC<NewsItemProps> = ({
       >
         <div className="flex items-start justify-between">
           <div className="flex-1 min-w-0">
-            <h3 className="font-semibold text-sm line-clamp-2 text-foreground mb-2">
+            <h3 className="font-semibold text-sm line-clamp-2 !text-black dark:!text-white mb-2">
               {article.title}
             </h3>
-            <div className="flex items-center gap-3 text-xs text-muted-foreground">
+            <div className="flex items-center gap-3 text-xs !text-gray-600 dark:!text-gray-400">
               <span className="flex items-center gap-1">
                 <Calendar className="w-3 h-3" />
                 {formatDate(article.publishedAt)}
@@ -77,7 +77,7 @@ export const NewsItem: React.FC<NewsItemProps> = ({
       >
         <div className="space-y-4">
           <div className="flex items-start justify-between">
-            <h3 className="font-semibold text-lg line-clamp-2 text-foreground flex-1">
+            <h3 className="font-semibold text-lg line-clamp-2 !text-black dark:!text-white flex-1">
               {article.title}
             </h3>
             <div className={cn(
@@ -94,14 +94,14 @@ export const NewsItem: React.FC<NewsItemProps> = ({
               <span className="text-sm font-medium text-primary">AI Summary</span>
             </div>
             <div className="space-y-2">
-              <p className="text-sm text-foreground">{article.summary.tldr[0]}</p>
-              <p className="text-sm text-foreground">{article.summary.tldr[1]}</p>
+              <p className="text-sm !text-black dark:!text-white">{article.summary.tldr[0]}</p>
+              <p className="text-sm !text-black dark:!text-white">{article.summary.tldr[1]}</p>
             </div>
           </div>
 
           {article.takeaways && article.takeaways.length > 0 && (
             <div className="space-y-2">
-              <h4 className="text-sm font-medium text-foreground">Key Takeaways:</h4>
+              <h4 className="text-sm font-medium !text-black dark:!text-white">Key Takeaways:</h4>
               <div className="space-y-1">
                 {article.takeaways.slice(0, 2).map((takeaway, index) => (
                   <div key={index} className="flex items-start gap-2">
@@ -110,7 +110,7 @@ export const NewsItem: React.FC<NewsItemProps> = ({
                       takeaway.importance === 'high' ? 'bg-red-500' :
                       takeaway.importance === 'medium' ? 'bg-yellow-500' : 'bg-green-500'
                     )} />
-                    <span className="text-sm text-muted-foreground">{takeaway.point}</span>
+                    <span className="text-sm text-gray-600 dark:text-gray-400">{takeaway.point}</span>
                   </div>
                 ))}
               </div>
@@ -118,7 +118,7 @@ export const NewsItem: React.FC<NewsItemProps> = ({
           )}
 
           <div className="flex items-center justify-between pt-2 border-t border-border/50">
-            <div className="flex items-center gap-3 text-xs text-muted-foreground">
+            <div className="flex items-center gap-3 text-xs text-gray-600 dark:text-gray-400">
               <span className="flex items-center gap-1">
                 <Calendar className="w-3 h-3" />
                 {formatDate(article.publishedAt)}
@@ -126,8 +126,8 @@ export const NewsItem: React.FC<NewsItemProps> = ({
               <span>{article.source}</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-xs text-muted-foreground">Read more</span>
-              <ExternalLink className="w-3 h-3 text-muted-foreground" />
+              <span className="text-xs text-gray-600 dark:text-gray-400">Read more</span>
+              <ExternalLink className="w-3 h-3 text-gray-600 dark:text-gray-400" />
             </div>
           </div>
         </div>
@@ -143,7 +143,7 @@ export const NewsItem: React.FC<NewsItemProps> = ({
     >
       <div className="space-y-4">
         <div className="flex items-start justify-between">
-          <h3 className="font-semibold text-xl line-clamp-3 text-foreground flex-1">
+          <h3 className="font-semibold text-xl line-clamp-3 text-black dark:text-white flex-1">
             {article.title}
           </h3>
           <div className={cn(
@@ -154,7 +154,7 @@ export const NewsItem: React.FC<NewsItemProps> = ({
           </div>
         </div>
 
-        <p className="text-muted-foreground line-clamp-3 leading-relaxed">
+        <p className="text-gray-600 dark:text-gray-400 line-clamp-3 leading-relaxed">
           {article.content.substring(0, 200)}...
         </p>
 
@@ -166,7 +166,7 @@ export const NewsItem: React.FC<NewsItemProps> = ({
         )}
 
         <div className="flex items-center justify-between pt-2 border-t border-border/50">
-          <div className="flex items-center gap-4 text-sm text-muted-foreground">
+          <div className="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-400">
             <span className="flex items-center gap-1">
               <Calendar className="w-4 h-4" />
               {formatDate(article.publishedAt)}
@@ -177,8 +177,8 @@ export const NewsItem: React.FC<NewsItemProps> = ({
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-sm text-muted-foreground">Read article</span>
-            <ExternalLink className="w-4 h-4 text-muted-foreground" />
+            <span className="text-sm text-gray-600 dark:text-gray-400">Read article</span>
+            <ExternalLink className="w-4 h-4 text-gray-600 dark:text-gray-400" />
           </div>
         </div>
       </div>
