@@ -9,7 +9,7 @@ class GroqAIService {
 
   constructor() {
     // Get API key from environment variables
-    const apiKey = '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';
+    const apiKey = process.env.VITE_GROQ_API_KEY;
     
     this.groq = new Groq({
       apiKey: apiKey,
@@ -19,7 +19,7 @@ class GroqAIService {
 
   // Check if API is available
   private isApiAvailable(): boolean {
-    const apiKey = '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';
+    const apiKey = process.env.VITE_GROQ_API_KEY;
     return !!(apiKey);
   }
 
