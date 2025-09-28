@@ -2,6 +2,34 @@
 
 An intelligent health news summarization platform that transforms complex medical articles into digestible, user-friendly content using advanced AI.
 
+## Demo Video
+
+- [Watch the Demo Video](https://www.loom.com/share/e42a7174ffe34cb682788ac0a6b1332c?sid=2d0718e3-1085-4b60-ae81-a6c3a933df3f)
+
+## Screenshots
+
+Here are some screenshots from the application:
+
+<p align="center">
+  <img src="screenshots/screenshot1.png" width="600" />
+</p>
+
+<p align="center">
+  <img src="screenshots/screenshot2.png" width="600" />
+</p>
+
+<p align="center">
+  <img src="screenshots/screenshot3.png" width="600" />
+</p>
+
+<p align="center">
+  <img src="screenshots/screenshot4.png" width="600" />
+</p>
+
+<p align="center">
+  <img src="screenshots/screenshot5.png" width="600" />
+</p>
+
 ## 1. Project Setup & Demo
 
 **Web Application Setup:**
@@ -10,7 +38,7 @@ An intelligent health news summarization platform that transforms complex medica
 npm install
 
 # Start development server
-npm run dev
+npm run dev / npm start
 ```
 
 **Live Demo:** [Access the application at http://localhost:8080](http://localhost:8080)
