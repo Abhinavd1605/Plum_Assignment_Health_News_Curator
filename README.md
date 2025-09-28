@@ -49,11 +49,10 @@ npm install
 npm run dev / npm start
 ```
 
-**Live Demo:** [Access the application at http://localhost:8080](http://localhost:8080)
 
 **Quick Start:**
 1. Clone the repository
-2. Run `npm install && npm run dev`
+2. Run `npm install && npm run dev / npm install && npm start`
 3. Navigate to http://localhost:8080
 4. Click "Process Health Articles" to see the AI in action
 
@@ -62,7 +61,7 @@ npm run dev / npm start
 **Core Challenge:** Transform complex health news articles into accessible, digestible content for general audiences.
 
 **Our Solution:** 
-- Load health articles from mock data (simulating RSS feeds)
+- Load health articles from mock data and an option to use RSS feeds
 - AI processes each article into 2-line TL;DR summaries
 - Extract 3 key takeaways with importance levels
 - Rewrite content in simpler, patient-friendly language
@@ -72,7 +71,6 @@ npm run dev / npm start
 - Users need quick medical insights without jargon
 - Professional healthcare workers require detailed analysis
 - Content should be both accessible and medically accurate
-- Demo mode should work without API dependencies
 
 ## 3. AI Prompts & Iterations
 
