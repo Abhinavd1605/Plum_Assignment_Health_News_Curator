@@ -23,7 +23,7 @@ Here are some screenshots from the application:
 </p>
 
 <p align="center">
-  <img src="screenshots/screenshot3.png" width="800" />
+  <img src="screenshots/screenshot3.png" width="400" />
 </p>
 
 <p align="center">
