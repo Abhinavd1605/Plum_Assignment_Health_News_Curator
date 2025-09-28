@@ -34,6 +34,10 @@ Here are some screenshots from the application:
   <img src="screenshots/screenshot5.png" width="800" />
 </p>
 
+<p align="center">
+  <img src="screenshots/screenshot6.png" width="800" />
+</p>
+
 ## 1. Project Setup & Demo
 
 **Web Application Setup:**
@@ -145,13 +149,11 @@ Requirements:
 ## 6. Known Issues / Improvements
 
 **Current Limitations:**
-- Demo mode uses static mock data instead of live RSS feeds
 - Limited to Groq AI model (could expand to multiple providers)
 - No user personalization or preference settings
 - Basic pagination (could implement infinite scroll)
 
 **Planned Improvements:**
-- **Live RSS Integration:** Connect to real medical news sources
 - **Multi-Language Support:** Translate content for global accessibility
 - **User Profiles:** Personalized content recommendations
 - **Offline Mode:** Cache processed articles for offline reading
@@ -162,43 +164,26 @@ Requirements:
 
 **Enhanced Polish & Features:**
 
-✨ **Professional UI/UX:**
+**Professional UI/UX:**
 - Medical-grade design system with consistent branding
 - Lottie animations (Doctor, Heart loading animations)
 - Glass morphism effects and professional gradients
 - Responsive design optimized for all devices
 
-🎯 **Advanced Features:**
+**Advanced Features:**
 - Real-time processing progress with animated pipeline
+- Live RSS feed
 - Sticky sidebars for enhanced navigation
 - Quick actions (View Original, Re-analyze articles)
 - Professional statistics and confidence scoring
 - Error boundaries and graceful failure handling
 
-⚡ **Technical Excellence:**
+**Technical Excellence:**
 - TypeScript for type safety
 - Modular component architecture  
 - Optimized performance with proper state management
 - Professional code organization and documentation
 - Comprehensive error handling
-
-🏥 **Medical-Specific Enhancements:**
-- HIPAA compliance indicators
-- Medical confidence scoring
-- Evidence-based validation references
-- Professional healthcare worker tools
-- Clinical relevance importance levels
-
-## Demo Mode
-
-The application includes a **demo mode** that works without an API key:
-
-- ✅ Full UI functionality preserved
-- ✅ Mock AI summaries and takeaways
-- ✅ Complete user flow demonstration
-- ✅ Professional interface showcase
-
-To enable real AI processing, add your Groq API key to the `.env` file.
 
 ## Technologies Used
 
