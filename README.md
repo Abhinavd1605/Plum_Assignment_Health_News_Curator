@@ -11,23 +11,27 @@ An intelligent health news summarization platform that transforms complex medica
 Here are some screenshots from the application:
 
 <p align="center">
-  <img src="screenshots/screenshot1.png" width="600" />
+  <img src="screenshots/screenshot1.png" width="800" />
 </p>
 
 <p align="center">
-  <img src="screenshots/screenshot2.png" width="600" />
+  <img src="screenshots/screenshot1.1.png" width="800" />
 </p>
 
 <p align="center">
-  <img src="screenshots/screenshot3.png" width="600" />
+  <img src="screenshots/screenshot2.png" width="800" />
 </p>
 
 <p align="center">
-  <img src="screenshots/screenshot4.png" width="600" />
+  <img src="screenshots/screenshot3.png" width="800" />
 </p>
 
 <p align="center">
-  <img src="screenshots/screenshot5.png" width="600" />
+  <img src="screenshots/screenshot4.png" width="800" />
+</p>
+
+<p align="center">
+  <img src="screenshots/screenshot5.png" width="800" />
 </p>
 
 ## 1. Project Setup & Demo
